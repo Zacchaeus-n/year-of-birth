@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+p {
+  color: #666;
+}
+/* UTILITIES */
+.wrapper {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90rem;
+  max-height: 80rem;
+  margin: 45px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.wrapper:hover {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 73ms;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+
+.container > * {
+  width: 100%;
+}
+.container__inner {
+  width: 50rem;
+  height: 500px;
+  padding-left: 20px;
+  margin: 20px auto 20px auto; /*centering*/
+  text-align: justify;
+}
+.container__inner:hover {
+  box-shadow: 0 0.2rem 1rem 0 rgba(110, 114, 110, 0.9);
+  border-radius: 8px;
+}
+/** FORM */
+.container__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__form > input {
+  width: 40rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  outline: none;
+  border-style: none;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.container__form > input:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(110, 114, 110, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.container__description {
+  width: 40rem;
+  margin-left: 3.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.container__showYear {
+  color: tomato;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+/* BUTTONS */
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: rgba(255, 96, 5, 0.9);
+  background-color: rgba(252, 252, 252, 0.9);
+  border-radius: 5px;
+  border-style: none;
+  transition: all 73ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1rem 0 rgba(110, 114, 110, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.btn[disabled] {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  background-color: #aaa;
+}
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
