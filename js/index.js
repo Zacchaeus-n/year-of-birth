@@ -1,4 +1,5 @@
 //ELEMENT SELECTION
+const submitBtn = document.querySelector("#btn");
 const fullname = document.querySelector("#name");
 const age = document.querySelector("#age");
 const showYear = document.querySelector(".container__showYear");
@@ -22,4 +23,10 @@ const calculateYear = (event) => {
   //   console.log(birthYear);
   //   document.querySelector("year").style.display = "block";
   showYear.innerHTML = `${yourName} your birth year is approximately ${birthYear}`;
+
+  //clear inputs
+  age.value = "";
+  fullname.value = "";
 };
+
+submitBtn.addEventListener("click", calculateYear);
